@@ -7,6 +7,8 @@ export const AppState = reactive({
   /** @type {import('./models/Account.js').Account} user info from the database*/
   account: null,
   /** @type {import('./models/Car.js').Car[]} cars from the database*/
-  cars: []
+  cars: [],
+  /** @type {import('./models/House.js').House[]} cars from the database*/
+  houses: []
 })
 

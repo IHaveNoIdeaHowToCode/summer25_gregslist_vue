@@ -18,8 +18,10 @@
               <span>Cars</span>
             </RouterLink>
             <span>|</span>
-            <!-- NOTE this should link to your houses page -->
-            <span>Houses</span>
+            <!-- NOTE this should link to you houses page -->
+            <RouterLink :to="{ name: 'House Listings'}">
+              <span>Houses</span>
+            </RouterLink>
             <span>|</span>
             <!-- NOTE this should link to your jobs page -->
             <span>Jobs</span>
