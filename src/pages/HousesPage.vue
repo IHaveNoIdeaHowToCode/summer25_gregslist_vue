@@ -41,7 +41,9 @@ async function getHouses() {
   </section>
   <section class="container">
     <div class="row">
-      <HouseListing :houseProp="house" />
+      <div v-for="house in houses" :key="house.id" class="col-md-4 mb-3">
+        <HouseListing :houseProp="house" />
+      </div>
     </div>
   </section>
 </template>
