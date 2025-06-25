@@ -11,6 +11,8 @@ class HouseService {
     AppState.houses = houses
   }
 
+
+
 }
 
 export const houseService = new HouseService()

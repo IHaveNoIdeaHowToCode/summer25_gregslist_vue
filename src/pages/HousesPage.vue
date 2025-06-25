@@ -7,7 +7,8 @@ import { Pop } from '@/utils/Pop.js';
 import { computed, onMounted } from 'vue';
 
 
-const house = computed(() => AppState.houses)
+const houses = computed(() => AppState.houses)
+const account = computed(() => AppState.account)
 
 onMounted(() => {
   getHouses()
@@ -30,10 +31,10 @@ async function getHouses() {
   <section class="container">
     <div class="row">
       <div class="col-12">
-        <div class="d-flex justify-content-center align-items-center">
-          <h1 class="display-3">Houses <span class="mdi mdi-home"></span></h1>
-          <!-- <button v-if="account" type="button" class="btn btn-outline-dark"></button> -->
-           <small>Login so you can sell your home!</small>
+        <div class="d-flex justify-content-center align-items-center gap-3">
+          <h1 class="display-3">Houses <span class="mdi mdi-home-circle"></span></h1>
+          <button v-if="account" type="button" class="btn btn-outline-dark">List Home <span class="mdi mdi-home-export-outline"></span></button>
+           <small v-else>Login so you can sell your home!</small>
         </div>
       </div>
     </div>
