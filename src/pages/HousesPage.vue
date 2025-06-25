@@ -33,7 +33,7 @@ async function getHouses() {
       <div class="col-12">
         <div class="d-flex justify-content-center align-items-center gap-3">
           <h1 class="display-3">Houses <span class="mdi mdi-home-circle"></span></h1>
-          <button v-if="account" type="button" class="btn btn-outline-dark">List Home <span class="mdi mdi-home-export-outline"></span></button>
+          <button v-if="account" type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#houseFormModal">List Home <span class="mdi mdi-home-export-outline"></span></button>
            <small v-else>Login so you can sell your home!</small>
         </div>
       </div>
@@ -46,6 +46,7 @@ async function getHouses() {
       </div>
     </div>
   </section>
+  
 </template>
 
 
